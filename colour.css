@@ -1,0 +1,227 @@
+:root {
+  --primary: #21b819;
+  --bg: #010101;
+  --inti: #b6895b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+.ummy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixied;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.ummy .ummy-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.ummy .ummy-logo span {
+  color: var(--primary);
+}
+.ummy.siintrovert a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+.ummy.siintrovert a:hover {
+  color: var(--inti);
+}
+.ummy.siintrovert a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--inti);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.ummy.siintrovert a :hover::after {
+  transform: scale(0.5);
+}
+
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  background-image: url("/assent/img/walpape.jpg");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 30%;
+
+  bottom: 0;
+
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+
+  color: #fff;
+
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+
+  margin-top: 1rem;
+
+  line-height: 1.4;
+
+  font-weight: 100;
+
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+
+  display: inline-block;
+
+  padding: 1rem 3rem;
+
+  font-size: 1.4rem;
+
+  color: #fff;
+
+  background-color: var(--primary);
+
+  border-radius: 0.5rem;
+
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.about,
+.menu,
+.contact {
+  padding: 10rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about.row {
+  display: flex;
+  float: left;
+
+  border: 3px solid #fff;
+
+  border-radius: 10px;
+}
+
+.about.row.about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  max-width: 320px;
+  float: right;
+
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+
+  margin: auto;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+
+  font-size: 1.4rem;
+
+  font-weight: 100;
+
+  line-height: 1.6;
+}
+.juduldrakor h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
